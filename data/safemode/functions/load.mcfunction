@@ -19,11 +19,8 @@ scoreboard objectives add smWaterBreathing trigger
 
 scoreboard players set @a smHelp 0
 
-scoreboard players set @a smFood 1
-scoreboard players set @a smHealth 1
-scoreboard players set @a smSlowFall 1
-scoreboard players set @a smInvisibility 1
-scoreboard players set @a smWaterBreathing 1
+#initialize for existing players
+execute as @a[tag=!safemode] run function safemode:initialize
 
 scoreboard players enable @a smHelp
 scoreboard players enable @a smFood
