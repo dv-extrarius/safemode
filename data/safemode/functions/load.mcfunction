@@ -1,10 +1,5 @@
-gamerule keepInventory true
-gamerule doDaylightCycle false
-gamerule randomTickSpeed 9
-time set noon
-
 scoreboard objectives add Constant dummy
-scoreboard players set Const2 Constant 2
+scoreboard players set #2 Constant 2
 
 scoreboard objectives add safemodeFood food
 scoreboard objectives add safemodeHealth health
